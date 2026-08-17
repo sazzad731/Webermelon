@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "./variables.css";
+@import "./utilities.css";
+@import "./responsive.css";
+
+
+
+
+.nav-ul{
+    background: #EDEDED;
+    border-radius: 999px;
+}
+
+.nav-ul-li{
+    padding: 8px 20px;
+    border-radius: 9999px;
+    transition: background-color .2s ease;
+    cursor: pointer;
+    
+}
+
+.nav-ul-li-a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--w-secondary-color);
+    transition: color .2s ease;
+}
+
+.nav-ul-li:hover{
+    background-color: #000000;
+}
+
+.nav-ul-li:hover .nav-ul-li-a{
+    color: #FFFFFF;
+}
+
+.nav-btn{
+    padding: 12px 20px;
+    gap: 8px;
+    border-radius: 999px;
+    background-color: var(--w-secondary-color);
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.menu-btn{
+    gap: 3px;
+    border: none;
+}
+
+.menu-btn-line{
+    width: 20px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--w-secondary-color);
+}

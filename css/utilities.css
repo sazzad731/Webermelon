@@ -1,0 +1,201 @@
+.container{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0px auto;
+}
+
+
+
+
+.w-font-poppins{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+.w-font-ibm{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+}
+.w-font-inter{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+
+
+
+
+/* font weight */
+.w-font-400{
+    font-weight: 400;
+}
+.w-font-500{
+    font-weight: 500;
+}
+.w-font-600{
+    font-weight: 600;
+}
+.w-font-700{
+    font-weight: 700;
+}
+.w-font-800{
+    font-weight: 800;
+}
+.w-font-900{
+    font-weight: 900;
+}
+
+
+
+
+
+/* font size */
+.w-font-128px{
+    font-size: 128px;
+}
+.w-font-64px{
+    font-size: 64px;
+}
+.w-font-48px{
+    font-size: 48px;
+}
+.w-font-42px{
+    font-size: 42px;
+}
+.w-font-28px{
+    font-size: 28px;
+}
+.w-font-24px{
+    font-size: 24px;
+}
+.w-font-22px{
+    font-size: 22px;
+}
+.w-font-20px{
+    font-size: 20px;
+}
+.w-font-18px{
+    font-size: 18px;
+}
+.w-font-16px{
+    font-size: 16px;
+}
+.w-font-14px{
+    font-size: 14px;
+}
+.w-font-12px{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+/* line height */
+.w-line-150{
+    line-height: 150%;
+}
+.w-line-140{
+    line-height: 140%;
+}
+.w-line-100{
+    line-height: 100%;
+}
+.w-line-85{
+    line-height: 85%;
+}
+.w-line-20px{
+    line-height: 20px;
+}
+
+
+
+
+
+
+/* letter spacing */
+
+
+
+
+
+
+
+/* gap */
+.w-gap-16px{
+    gap: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* margin */
+.w-mt-48px{
+    margin-top: 48px;
+}
+
+
+.w-mb-108px{
+    margin-bottom: 108px;
+}
+
+
+
+
+
+
+/* groupe css */
+.w-flex{
+    display: flex;
+}
+
+.w-flex-col{
+    flex-direction: column;
+}
+.w-flex-row{
+    flex-direction: row;
+}
+.w-flex-col-reverse{
+    flex-direction: column-reverse;
+}
+
+.w-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-align-start{
+    align-items: start;
+}
+.w-align-center{
+    align-items: center;
+}
+.w-align-end{
+    align-items: end;
+}
+
+.w-justify-start{
+    justify-content: start;
+}
+.w-justify-center{
+    justify-content: center;
+}
+.w-justify-end{
+    justify-content: end;
+}
+.w-justify-around{
+    justify-content: space-around;
+}
+.w-justify-between{
+    justify-content: space-between;
+}
+.w-justify-evenly{
+    justify-content: space-evenly;
+}
