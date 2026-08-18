@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webermelon</title>
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <header class="w-mt-48px w-mb-108px">
-        <nav class="container w-flex w-align-center w-justify-between">
+        <nav class="container w-flex w-align-center w-justify-between w-position-relative">
             <img src="./assets/images/logo.png" alt="logo">
             <ul class="w-flex w-align-center w-justify-between nav-ul">
                 <li class="nav-ul-li"><a class="nav-ul-li-a" href="#hero">Home</a></li>
@@ -16,15 +19,193 @@
                 <li class="nav-ul-li"><a class="nav-ul-li-a" href="#services">Services</a></li>
                 <li class="nav-ul-li"><a class="nav-ul-li-a" href="#portfolio">Portfolio</a></li>
                 <li class="nav-ul-li"><a class="nav-ul-li-a" href="#contact">Contact</a></li>
+                <button class="w-align-center w-justify-between w-font-400 w-font-14px w-line-140 w-font-poppins nav-btn nav-btn-mobile">
+                    <img src="./assets/icons/calling.svg" alt="telephone">
+                    Let's Talk
+                </button>
             </ul>
-            <button class="w-flex w-align-center w-justify-between w-font-400 w-font-14px w-line-140 w-font-poppins nav-btn"><img src="./assets/icons/calling.svg" alt="telephone"> Let's Talk</button>
-            <button class="w-flex w-flex-col menu-btn">
+            <button class="w-flex w-align-center w-justify-between w-font-400 w-font-14px w-line-140 w-font-poppins nav-btn nav-btn-desk"><img src="./assets/icons/calling.svg" alt="telephone"> Let's Talk</button>
+            <button class="w-flex-col menu-btn">
                 <div class="menu-btn-line"></div>
                 <div class="menu-btn-line"></div>
                 <div class="menu-btn-line"></div>
             </button>
         </nav>
     </header>
+
+    <main>
+        <!-- hero section -->
+        <section class="container w-mb-140px">
+            <h1 class="w-font-500 w-font-128px w-line-85 w-letter--6 w-mb-32px hero-h1">Design That
+            Inspires & Delights</h1>
+            <div class="w-flex-between w-mb-48px">
+                <span class="w-font-500 w-font-28px w-line-140 w-letter--3">(Hero Section)</span> 
+                <a class="w-flex w-gap-20px w-font-500 w-font-28px w-line-140 w-color-black" href="#">
+                    <img src="./assets/icons/Arrow 1.svg" alt="arrow icon">
+                    Learn More
+                </a>
+            </div>
+            <img class="w-width-100 hero-img" src="./assets/images/hero.png" alt="image">
+        </section>
+
+
+
+        <!-- Design tools section -->
+         <section class="w-bg-black w-pt-80px w-pb-80px w-mb-140px">
+            <div class="container">
+                <h2 class="w-font-400 w-font-48px w-line-140 w-color-white design-h2">We Use Design Tools That Deliver Excellence</h2>
+                <div class="w-flex w-gap-24px w-mb-24px design-flex-box-1">
+                        <div class="w-bg-white w-flex w-flex-col w-justify-between w-width-100 design-card-fill">
+                            <div class="w-flex w-justify-between w-gap-16px">
+                                <p class="w-font-400 w-font-24px w-line-140">We work with globally trusted design software and technologies.</p>
+                                <div class="w-bg-black round-icon">
+                                    <img src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
+                                </div>
+                            </div>
+                            <a class="w-font-400 w-font-20px w-line-140 w-self-align-end w-color-primary" href="#">More About</a>
+                        </div>
+                        
+                        <div>
+                            <img class="w-width-100 design-card-img-1" src="./assets/images/Design-Tools-1.png" alt="image">
+                        </div>
+                </div>
+
+                <div class="w-flex w-gap-24px design-flex-box-2">
+                    <a class="w-flex w-flex-col w-justify-between design-card-outline" href="#">
+                        <p class="w-font-400 w-font-24px w-line-140 w-color-white">Proven Design Systems & Assets
+                            By Figma</p>
+                        <div class="w-bg-white w-self-align-end round-icon">
+                            <img src="./assets/icons/arrow-up-right-green.svg" alt="arrow icon">
+                        </div>
+                    </a>
+                    
+                    <img class="design-card-img-2" src="./assets/images/Design-Tools-2.png" alt="image">
+                    
+                    <div class="w-bg-white w-flex w-flex-col w-justify-between design-card-fill">
+                        <div class="w-flex w-justify-between">
+                            <p class="w-font-400 w-font-24px w-line-140">Every design goes through structured research, iteration, and
+                                quality.</p>
+                            <div class="w-bg-black round-icon">
+                                <img src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
+                            </div>
+                        </div>
+                        <a class="w-font-400 w-font-20px w-line-140 w-self-align-end w-color-primary" href="#">More About</a>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+
+
+         <!-- our favorite project section -->
+          <section class="container w-mb-140px">
+            <div class="w-flex-center w-mb-48px">
+                <h2 class="w-font-400 w-font-48px w-line-140 w-text-center w-color-white project-h2">Our favorite Project</h2>
+            </div>
+
+            <!-- product list 1 -->
+            <div class="w-flex w-align-center w-justify-between project-list-item">
+                <div class="w-flex w-align-center w-gap-24px">
+                    <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">01/</span>
+                    <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Entrepreneurship</p>
+                </div>
+                <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
+                <div class="w-flex w-align-center w-gap-12px podcast-div">
+                    <p class="w-font-400 w-font-20px w-line-140 w-color-accent">126 Podcasts</p>
+                    <div class="podcasts-circle-div">
+                        <div class="podcasts-circle w-bg-primary"></div>
+                        <div class="podcasts-circle"></div>
+                        <div class="podcasts-circle"></div>
+                        <div class="podcasts-circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product list 2 -->
+            <div class="w-flex w-align-center w-justify-between project-list-item">
+                <div class="w-flex w-align-center w-gap-24px">
+                    <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">02/</span>
+                    <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Wellness</p>
+                </div>
+                <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
+                <div class="w-flex w-align-center w-gap-12px podcast-div">
+                    <p class="w-font-400 w-font-20px w-line-140 w-color-accent">24 Podcasts</p>
+                    <div class="podcasts-circle-div">
+                        <div class="podcasts-circle"></div>
+                        <div class="podcasts-circle  w-bg-primary"></div>
+                        <div class="podcasts-circle"></div>
+                        <div class="podcasts-circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product list 3 -->
+            <div class="w-flex w-align-center w-justify-between project-list-item">
+                <div class="w-flex w-align-center w-gap-24px">
+                    <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">03/</span>
+                    <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Food & Beverage</p>
+                </div>
+                <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
+                <div class="w-flex w-align-center w-gap-12px podcast-div">
+                    <p class="w-font-400 w-font-20px w-line-140 w-color-accent">65 Podcasts</p>
+                    <div class="podcasts-circle-div">
+                        <div class="podcasts-circle"></div>
+                        <div class="podcasts-circle"></div>
+                        <div class="podcasts-circle w-bg-primary"></div>
+                        <div class="podcasts-circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product list 4 -->
+            <div class="w-flex w-align-center w-justify-between project-list-item">
+                <div class="w-flex w-align-center w-gap-24px">
+                    <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">04/</span>
+                    <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Sustainability</p>
+                </div>
+                <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
+                <div class="w-flex w-align-center w-gap-12px podcast-div">
+                    <p class="w-font-400 w-font-20px w-line-140 w-color-accent">75 Podcasts</p>
+                    <div class="podcasts-circle-div">
+                        <div class="podcasts-circle"></div>
+                        <div class="podcasts-circle"></div>
+                        <div class="podcasts-circle"></div>
+                        <div class="podcasts-circle  w-bg-primary"></div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+
+
+        <!-- customer experience section -->
+         <section>
+            <div class="container">
+                <div>
+                    <div class="w-mb-12px">
+                        <h2 class="w-font-500 w-font-64px w-line-100 customer-h2">Deliver a high-quality <span>customer experience</span>
+                        </h2>
+                        <div><img src="./assets/icons/bottom-right-bold-arrow.svg" alt="arrow icon"></div>
+                    </div>
+                    <p class="w-font-400 w-font-18px w-line-140 w-color-base300 w-mb-24px">Embrace AI-powered conversations with a GPT-4–supported communication platform designed to delight customers, empower
+                    teams, and reduce operational workload.</p>
+                    <div class="customer-automate-cart">
+                        <div class="w-position-relative customer-automate-cart-icons">
+                            <img class="w-position-absolute notion" src="./assets/icons/notion-2 1.svg" alt="image">
+                            <img class="w-position-absolute google-meet" src="./assets/icons/google-meet-icon-2020- 1.svg" alt="image">
+                            <img class="w-position-absolute evernote" src="./assets/icons/evernote-icon 1.svg" alt="image">
+                            <img class="w-position-absolute microsoft-teams" src="./assets/icons/microsoft-teams-1 1.svg" alt="image">
+                        </div>
+                        <h4>Automate your workflow with our integrations</h4>
+                        <p>Connect Rotar AI with your customer service, sales, marketing, and recruitment tools using our user-friendly API,
+                        webhooks, or Zapier integration.</p>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+         </section>
+    </main>
 
     <script src="./script.js"></script>
 </body>

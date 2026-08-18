@@ -1,0 +1,85 @@
+@media screen and (max-width: 892px) {
+    .menu-btn{
+        display: flex;
+    }
+
+    .nav-btn-mobile{
+        display: flex;
+    }
+
+    .nav-btn-desk{
+        display: none;
+    }
+
+    .nav-ul{
+        flex-direction: column;
+        position: absolute;
+        border-radius: 20px;
+        padding: 20px 40px;
+        gap: 20px;
+        top: -500px;
+        right: 16px;
+        transition: all .5s;
+    }
+
+    .nav-ul.active{
+        top: 40px;
+    }
+
+
+
+    .design-flex-box-2{
+        flex-wrap: wrap;
+    }
+
+    .design-card-outline{
+        max-width: calc(50% - 16px);
+    }
+
+    .design-card-img-2{
+        width: calc(50% - 16px);
+        height: 178px;
+    }
+
+    .design-card-fill{
+        max-width: 100%;
+    }
+
+
+
+    .project-list-item{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .podcast-div{
+        margin-left: 98px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .design-flex-box-1{
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    .design-card-outline {
+        max-width: 100%;
+    }
+    
+    .design-card-img-2 {
+        width: 100% ;
+    }
+
+    .project-list-number{
+        padding: 5px 15px;
+    }
+}

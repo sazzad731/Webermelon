@@ -9,6 +9,7 @@
 body {
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
+    height: 100vh;
 }
 
 img {
@@ -31,4 +32,6 @@ a {
 :root{
     --w-primary-color: #24806F;
     --w-secondary-color: #011F11;
+    --w-accent-color: #A4A4A4;
+    --w-base-300: #707070;
 }
