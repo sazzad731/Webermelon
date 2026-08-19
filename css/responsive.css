@@ -1,3 +1,14 @@
+@media screen and (max-width: 1023px){
+    .creative-card-flexbox{
+        flex-wrap: wrap;
+        row-gap: 180px;
+    }
+}
+
+
+
+
+
 @media screen and (max-width: 892px) {
     .menu-btn{
         display: flex;

@@ -24,6 +24,11 @@ a {
     text-decoration: none;
 }
 
+button{
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
 
 
 
@@ -34,4 +39,5 @@ a {
     --w-secondary-color: #011F11;
     --w-accent-color: #A4A4A4;
     --w-base-300: #707070;
+    --w-base-400: #606060;
 }
