@@ -1,7 +1,59 @@
+@media screen and (max-width: 1024px) {
+    .creative-card-flexbox {
+        margin-top: 180px;
+    }
+
+    .templates-section{
+        padding: 0 16px;
+    }
+
+    .customer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .customer-left-content{
+        width: 100%;
+    }
+    .customer-h2{
+        font-size: clamp(34px, calc(16.593px + 4.63vw), 64px);
+    }
+    .customer-automate-cart{
+        max-width: 100%;
+    }
+    .customer-automate-cart-icons{
+        max-width: 500px;
+        margin: 0px auto;
+    }
+    .customer-right-content{
+        width: 100%;
+    }
+    .customer-right-div-card-1{
+        max-width: 100%;
+    }
+    .live-chat-card{
+        max-width: 100%;
+    }
+    .gradient-overlay{
+        width: 100%;
+    }
+    .customer-right-div-card-2{
+        max-width: 100%;
+    }
+    .audience-card{
+        max-width: 100%;
+    }
+}
+
+
 @media screen and (max-width: 1023px){
     .creative-card-flexbox{
         flex-wrap: wrap;
         row-gap: 180px;
+    }
+
+    .brand-experience-div-2{
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -67,6 +119,22 @@
     .podcast-div{
         margin-left: 98px;
     }
+
+    .logo-tags-links-grid{
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .footer-logo-break{
+        display: block;
+    }
+
+    .tags-links-div{
+        justify-self: self-start;
+    }
+
+    .quick-links-div{
+        justify-self: self-start;
+    }
 }
 
 
@@ -92,5 +160,22 @@
 
     .project-list-number{
         padding: 5px 15px;
+    }
+
+    .customer-right-content{
+        flex-direction: column;
+    }
+
+    .brand-experience-buttons-div{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logo-tags-links-grid {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .footer-logo-break {
+        display: none;
     }
 }

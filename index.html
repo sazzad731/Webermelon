@@ -180,11 +180,18 @@
 
 
         <!-- customer experience section -->
-         <!-- <section class="customer-experience-section w-mb-140px">
+         <section class="customer-experience-section w-mb-140px">
             <div class="container w-flex w-gap-48px customer-container">
                 <div class="customer-left-content">
                     <div class="w-position-relative customer-left-div-header">
-                        <h2 class="w-font-500 w-font-64px w-line-100 customer-h2">Deliver a high-quality <span>customer experience</span>
+                        <svg width="0" height="0" style="position: absolute;">
+                            <filter id="gooey">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                            </filter>
+                        </svg>
+                        <h2 class="w-font-500 w-font-64px w-line-140 customer-h2">Deliver a high-quality <span class="customer-highlight">customer experience</span>
                         </h2>
                         <div class="w-position-absolute bottom-right-bold-arrow">
                             <img src="./assets/icons/bottom-right-bold-arrow.svg" alt="arrow icon">
@@ -217,7 +224,7 @@
                     </div>
                 </div>
 
-                <div class="w-flex w-gap-16px">
+                <div class="w-flex w-gap-16px customer-right-content">
                     <div>
                         <div class="w-mb-16px customer-right-div-card-1">
                             <div class="w-flex w-flex-col w-align-end w-mb-24px">
@@ -311,12 +318,12 @@
                     </div>
                 </div>
             </div>
-         </section> -->
+         </section>
 
 
 
         <!-- creative minds section -->
-         <section class="container">
+         <section class="container w-mb-140px">
             <h2 class="w-font-500 w-font-48px w-line-140 w-letter--2 w-text-center w-mb-140px creative-h2 w-mb-160px">Meet the creative minds <br>
             behind the work</h2>
 
@@ -362,8 +369,176 @@
                 </div>
             </div>
          </section>
-    </main>
 
+
+
+        <!-- templates section -->
+         <section class="templates-section">
+            <div class="w-flex">
+                <div>
+                    <h2 class="w-font-500 w-font-64px w-line-140 templates-h2">Use <span class="templates-span">templates</span> to get started your project</h2>
+                    <div class="templates-tag-div">
+                        <p class="templates-tag">Branding</p>
+                        <p class="templates-tag">UI/UX</p>
+                        <p class="templates-tag">Web Design</p>
+                        <p class="templates-tag">Marketing</p>
+                        <p class="templates-tag">Startup</p>
+                        <p class="templates-tag">SaaS</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="./assets/images/templates-1.png" alt="image">
+                            <div>
+                                <p>Great Happy yo help find the right plan for you 🎯.</p>
+                                <p>What are you lookin to do with Rotar AI</p>
+                            </div>
+                            <div>
+                                <p>Get more customer on my website page</p>
+                            </div>
+                        </div>
+                        <h4>Branding for Startups</h4>
+                        <p>Pre-built brand identity templates including logos, colo...</p>
+                        <button>Try template for free <img src="./assets/icons/arrow-up-right.svg" alt="icon"></button>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+
+        <!-- brand experience section -->
+        <svg width="0" height="0" style="position: absolute; width: 0; height: 0;">
+            <defs>
+                <clipPath id="responsive-clip" clipPathUnits="objectBoundingBox">
+                    <path transform="scale(0.00080645, 0.00213675)"
+                        d="M1114.01 74C1102.97 74 1094.01 65.0457 1094.01 54V20C1094.01 8.95431 1085.06 0 1074.01 0H20C8.95435 0 0 8.95431 0 20V415C0 426.046 8.95435 435 20 435H51.8169H139.401C148.514 435 155.901 442.387 155.901 451.5C155.901 460.613 163.288 468 172.401 468H1142.95C1154 468 1162.95 459.046 1162.95 448V429C1162.95 417.954 1171.9 409 1182.95 409H1220C1231.05 409 1240 400.046 1240 389V94C1240 82.9543 1231.05 74 1220 74H1114.01Z" />
+                </clipPath>
+            </defs>
+        </svg>
+         <section class="w-mb-80px container">
+            <div class="brand-experience-div-1">
+                <h2 class="w-font-500 w-font-64px w-line-140 w-color-white w-mb-44px">Take control of your brand experience today</h2>
+                <div class="w-flex w-justify-between brand-experience-div-2">
+                    <p class="w-font-400 w-font-18px w-line-140 w-color-white brand-experience-p">Transform your business with strategic design solutions that elevate your brand, engage your audience, and drive
+                        measurable growth.</p>
+                    <div class="w-flex w-align-center w-gap-16px brand-experience-buttons-div">
+                        <button class="w-flex w-align-center w-gap-10px w-bg-white w-color-primary w-font-500 w-font-18px w-line-140 contact-now-btn">
+                            <div class="contact-now-btn-icon">
+                                <img class="arrow-up-right" src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
+                                <img class="arrow-up-right-green" src="./assets/icons/arrow-up-right-green.svg" alt="">
+                            </div>
+                            Contact Now
+                        </button>
+                        <button class="w-flex w-align-center w-gap-10px w-font-500 w-font-16px w-line-140 w-color-white contact-us-btn">
+                            Contact Us
+                            <div class="contact-us-btn-icon">
+                                <img src="./assets/icons/telephone.svg" alt="icon">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
+    <footer class="w-bg-black footer">
+        <svg style="width: 0; height: 0; position: absolute;" aria-hidden="true">
+            <defs>
+                <clipPath id="responsive-clip-2" clipPathUnits="objectBoundingBox">
+                    <path transform="scale(0.00080645, 0.00462963)"
+                        d="M-4.66262e-07 24.0001C-2.08757e-07 10.7452 10.7452 9.07533e-05 24 9.09437e-05L1216 0.00010806C1229.25 0.00010825 1240 10.7453 1240 24.0001L1240 148.997C1240 155.567 1237.31 161.85 1232.55 166.38L1211.94 186L1186.93 209.493C1182.48 213.673 1176.6 216 1170.5 216L51.5 216L24 216C10.7452 216 -3.98754e-06 205.255 -3.73004e-06 192L-4.66262e-07 24.0001Z" />
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="container">
+            <div class="logo-tags-links-grid w-mb-88px">
+                <div>
+                    <img class="w-mb-24px" src="./assets/images/w.png" alt="logo">
+                    <p class="w-font-400 w-font-18px w-line-26px w-color-white footer-logo-p">Don’t need to look around for individual experts. We have all under one roof!</p>
+                    <button class="w-font-500 w-font-18px w-line-140 w-color-primary w-bg-white book-meeting-btn">
+                        <div class="book-meeting-btn-img">
+                            <img src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
+                        </div>
+                        Book a Meeting
+                    </button>
+                </div>
+                <br class="footer-logo-break">
+
+                <div class="w-justify-self-end tags-links-div">
+                    <h4 class="w-font-500 w-font-24px w-line-140 w-color-white w-mb-20px">Tags</h4>
+                    <ul class="w-flex w-flex-col w-gap-12px">
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Laravel Developer</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">PHP Developer</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Javascript Developer</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Yii Developer</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Mobile App Developer</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Software Developer</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">WordPress Developer</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">WordPress Theme Development</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">WordPress Plugin Development</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">MERN Strack Development</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">React Developer</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Node Js Developer</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Vue Js Developer</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-justify-self-end quick-links-div">
+                    <h4 class="w-font-500 w-font-24px w-line-140 w-color-white w-mb-20px">Quick Links</h4>
+                    <ul class="w-flex w-flex-col w-gap-12px w-mb-60px">
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Portfolio</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Testimonial</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Contact</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">About</a></li>
+                        <li><a class="w-font-400 w-font-16px w-line-140 w-color-white" href="#">Career</a></li>
+                    </ul>
+
+                    <h5 class="w-color-white w-font-24px w-line-140 w-mb-20px">Marketing Solution</h5>
+                    <img src="./assets/images/crazygraph.png" alt="image">
+                </div>
+            </div>
+
+            <div class="w-mb-49px">
+                <img class="w-width-100" src="./assets/images/Webermelon.png" alt="image">
+
+                <div class="webermelon-bottom-div">
+                    <div>
+                        <h5 class="w-font-500 w-font-24px w-line-140 w-color-white w-mb-20px">USA</h5>
+                        <p class="w-font-400 w-font-16px w-line-140 w-color-white usa-p">25108 Marguerite Pkwy Suite A-236 Mission Viejo Ca 92692</p>
+                    </div>
+
+                    <div>
+                        <h5 class="w-font-500 w-font-24px w-line-140 w-color-white w-mb-20px">United Kingdom</h5>
+                        <p class="w-font-400 w-font-16px w-line-140 w-color-white usa-p">Webermelon Limited 71-75 Shelton Street, Covent Garden London WC2H 9JQ</p>
+                    </div>
+
+                    <div>
+                        <h5 class="w-font-500 w-font-24px w-line-140 w-color-white w-mb-20px">Bangladesh</h5>
+                        <p class="w-font-400 w-font-16px w-line-140 w-color-white usa-p">Webermelon, Skytech Nargis (4th Floor), Habib Lane, Khulshi,  Chittagong</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-flex w-justify-between w-align-center w-flex-wrap w-gap-20px">
+                <div class="w-flex w-gap-20px">
+                    <div class="footer-social-icon-div linkedin-icon-div">
+                        <img class="w-width-100" src="./assets/icons/linkdein.svg" alt="social icons">
+                    </div>
+                    <div class="footer-social-icon-div insta-icon-div">
+                        <img class="w-width-100" src="./assets/icons/insta.svg" alt="social icons">
+                    </div>
+                    <div class="footer-social-icon-div facebook-icon-div">
+                        <img class="w-width-100 facebook-icon" src="./assets/icons/facebook.svg" alt="social icons">
+                    </div>
+                    <div class="footer-social-icon-div x-icon-div">
+                        <img class="w-width-100" src="./assets/icons/x.svg" alt="social icons">
+                    </div>
+                </div>
+                <p class="w-font-400 w-font-20px w-line-140 w-color-white">&copy; 2024. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>

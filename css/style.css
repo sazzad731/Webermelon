@@ -194,15 +194,25 @@
     margin-bottom: 41.94px;
 }
 
+.customer-highlight{
+    background-color: #ACEBDF;
+    border-radius: 20px;
+    padding: 0px 7px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    position: relative;
+    filter: url('#gooey');
+}
+
 .bottom-right-bold-arrow{
-    bottom: 0px;
+    bottom: clamp(0px, calc(-5.187px + 1.38vw), 8.94px);
     right: 65.34px;
     display: flex;
     padding: 10px 33.99px 10px 10px;
     border: 1px solid #101010;
     border-radius: 100px;
-    width: 100.04px;
-    height: 52.06px;
+    width: clamp(70px, calc(59.374px + 2.826vw), 100.04px);
+    height: clamp(36.06px, calc(30.401px + 1.505vw), 52.06px);
     position: relative;
 }
 
@@ -212,8 +222,8 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 115.73px;
-    height: 52.06px;
+    width: clamp(90px, calc(80.899px + 2.421vw), 115.73px);
+    height: clamp(36.06px, calc(30.401px + 1.505vw), 52.06px);
     border: 1px solid #101010;
     border-radius: 100px;
 }
@@ -224,8 +234,8 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 133.38px;
-    height: 52.06px;
+    width: clamp(110px, calc(101.73px + 2.199vw), 133.38px);
+    height: clamp(36.06px, calc(30.401px + 1.505vw), 52.06px);
     border: 1px solid #101010;
     border-radius: 100px;
 }
@@ -602,4 +612,212 @@
 .creative-card-3-heart-3{
     top: -103.58px;
     right: 51.23px;
+}
+
+
+
+
+
+
+
+/* templates section */
+.templates-section{
+    max-width: 1440px;
+    margin: 0px auto 140px auto;
+    padding-left: clamp(0px, calc(-246.747px + 24.096vw), 100px);
+}
+
+.templates-h2{
+    max-width: 515px;
+    margin-bottom: 58px;
+}
+
+.templates-span{
+    background-color: #ACEBDF;
+    border-radius: 20px;
+    padding: 0px 10px;
+}
+
+.templates-tag-div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 515px;
+    flex-wrap: wrap;
+}
+
+.templates-tag{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 12px 24px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    height: 48px;
+}
+
+
+
+
+
+
+
+/* brand-experience-section */
+.brand-experience-div-1{
+    padding: clamp(32px, calc(16.437px + 4.139vw), 76px) clamp(20px, calc(15.755px + 1.129vw), 32px);
+    width: 100%;
+    max-width: 1240px;
+    aspect-ratio: 1240 / 468;
+    background-color: var(--w-primary-color);
+    clip-path: url(#responsive-clip);
+    -webkit-clip-path: url(#responsive-clip);
+    background-image: url("../assets/images/geometric-shape-circle-point.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.brand-experience-p{
+    width: 100%;
+    max-width: 461px;
+}
+
+.contact-now-btn{
+    padding: 17px 16px 17px 65px;
+    border-radius: 100px;
+    position: relative;
+    transition: all .3s ease-out;
+}
+
+.arrow-up-right-green{
+    display: none;
+}
+
+.contact-now-btn-icon{
+    padding: 10px;
+    background-color: var(--w-primary-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    transition: all .3s;
+}
+
+.contact-now-btn:hover{
+    padding: 17px 65px 17px 16px;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.contact-now-btn:hover .contact-now-btn-icon{
+    background-color: #FFFFFF;
+    left: 147px;
+}
+
+.contact-now-btn:hover .arrow-up-right{
+    display: none;
+}
+.contact-now-btn:hover .arrow-up-right-green{
+    display: block;
+}
+
+
+.contact-us-btn{
+    padding: 16px 32px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+
+
+
+
+/* footer section */
+.footer{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-logo-p{
+    width: 100%;
+    max-width: 356px;
+    margin-bottom: 48px;
+}
+
+
+.logo-tags-links-grid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: clamp(50px, calc(7.554px + 11.289vw), 170px);
+}
+
+
+.book-meeting-btn{
+    padding: 8px 16px 8px 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+}
+
+.book-meeting-btn-img{
+    padding: 10px;
+    background-color: var(--w-primary-color);
+    border-radius: 50%;
+}
+
+
+.webermelon-bottom-div{
+    padding: 59px 36px;
+    background-color: var(--w-primary-color);
+    width: 100%;
+    max-width: 1240px;
+    aspect-ratio: 1240 / 216;
+    clip-path: url(#responsive-clip-2);
+    -webkit-clip-path: url(#responsive-clip-2);
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(-25px, calc(3.428px + -1.976vw), -4px);
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.usa-p{
+    max-width: 332px;
+}
+
+
+.footer-social-icon-div{
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.linkedin-icon-div{
+    padding: 11.13px 10.96px;
+}
+
+.insta-icon-div{
+    padding: 10.25px 9.64px;
+}
+
+.facebook-icon-div{
+    padding: 5.54px 12.52px 0px 10.52px;;
+}
+
+.facebook-icon{
+    margin-top: 3px;
+    width: 18.96px;
+    height: 35.83px;
+}
+
+.x-icon-div{
+    padding: 11.31px 10.15px 10.77px 10.15px;
+}
+
+.footer-logo-break{
+    display: none;
 }
