@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="w-mt-48px w-mb-108px">
@@ -373,6 +374,7 @@
 
 
         <!-- templates section -->
+         <!-- todo: svg shape -->
          <section class="templates-section">
             <div class="w-flex">
                 <div>
@@ -387,24 +389,120 @@
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <div>
-                            <img src="./assets/images/templates-1.png" alt="image">
-                            <div>
-                                <p>Great Happy yo help find the right plan for you 🎯.</p>
-                                <p>What are you lookin to do with Rotar AI</p>
-                            </div>
-                            <div>
-                                <p>Get more customer on my website page</p>
+                    <div class="template-card">
+                        <div class="w-position-relative w-mb-16px custom-shape">
+                            <img class="w-width-100" src="./assets/images/templates-1.png" alt="image">
+                            <div class="w-position-absolute custom-shape-content">
+                                <div class="w-bg-white w-mb-16px custom-shape-content-1">
+                                    <p class="w-font-400 w-font-12px w-line-140 w-mb-8px">Great Happy yo help find the right plan for you 🎯.</p>
+                                    <p class="w-font-400 w-font-12px w-line-140">What are you lookin to do with Rotar AI</p>
+                                </div>
+                                <div class="w-bg-primary custom-shape-content-2">
+                                    <p class="w-font-400 w-font-12px w-line-140 w-color-white">Get more customer on my website page</p>
+                                </div>
                             </div>
                         </div>
-                        <h4>Branding for Startups</h4>
-                        <p>Pre-built brand identity templates including logos, colo...</p>
-                        <button>Try template for free <img src="./assets/icons/arrow-up-right.svg" alt="icon"></button>
+                        <h4 class="w-font-600 w-font-24px w-line-140 w-mb-4px">Branding for Startups</h4>
+                        <p class="w-font-400 w-font-18px w-line-140 w-color-base400 w-mb-16px">Pre-built brand identity templates including logos, colo...</p>
+                        <button class="w-flex-center w-font-inter w-font-500 w-font-16px w-line-150 w-color-white w-bg-black try-template-btn">Try template for free <img src="./assets/icons/arrow-up-right.svg" alt="icon"></button>
                     </div>
                 </div>
             </div>
          </section>
+
+
+
+        <!-- Completed Project section -->
+        <section class="w-mb-140px completed-project-section" id="projectSection">
+            <div class="w-flex completed-project-container">
+                <div class="w-flex completed-project-lef-content-div">
+                    <div class="completed-project-circle-1">
+                        <div class="completed-project-circle-2"></div>
+                        <ul class="completed-project-circle-ul">
+                            <li class="w-font-400 w-font-14px w-line-140 w-cursor-pointer w-mb-16px menu-item active-menu">
+                                Concord Grape</li>
+                            <li class="w-font-400 w-font-14px w-line-140 w-cursor-pointer w-mb-16px avocado-li menu-item">
+                                Avocado</li>
+                            <li class="w-font-400 w-font-14px w-line-140 w-cursor-pointer w-mb-16px blackberry-li menu-item">
+                                Blackberry</li>
+                            <li class="w-font-400 w-font-14px w-line-140 w-cursor-pointer w-mb-16px strawberry-li menu-item">
+                                Strawberry</li>
+                            <li class="w-font-400 w-font-14px w-line-140 w-cursor-pointer w-mb-16px orange-li menu-item">Orange
+                            </li>
+                            <li class="w-font-400 w-font-14px w-line-140 w-cursor-pointer menu-item">Pomegranate</li>
+                        </ul>
+                    </div>
+                    <div class="completed-project-text">
+                        <h2 class="w-font-700 w-font-42px w-line-140 w-color-white">Completed Project</h2>
+                        <p class="w-font-400 w-font-12px w-line-140 w-color-white completed-project-h2-p" id="dynamicText">
+                            Fruits are an excellent source of essential vitamins and minerals, and they are high in fiber.
+                            Fruits also provide a wide range of health-boosting antioxidants, including flavonoids. Eating a
+                            diet high in fruits and vegetables can reduce a person's risk of developing heart disease, cancer,
+                            inflammation, and diabetes.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="w-flex carousel-container">
+                    <div class="carousel-arrows">
+                        <div class="w-cursor-pointer swiper-prev-btn">
+                            <img class="carousel-arrow active-icon" src="./assets/icons/square-chevron-up-active.svg"
+                                alt="arrow icon active">
+                            <img class="carousel-arrow disable-icon" src="./assets/icons/square-chevron-up-disable.svg"
+                                alt="arrow icon disable">
+                        </div>
+                        <div class="w-cursor-pointer swiper-next-btn">
+                            <img class="carousel-arrow active-icon" src="./assets/icons/square-chevron-down-active.svg"
+                                alt="arrow icon active">
+                            <img class="carousel-arrow disable-icon" src="./assets/icons/square-chevron-down-disable.svg"
+                                alt="arrow icon disable">
+                        </div>
+                    </div>
+        
+                    <!-- Swiper Slider Container -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper fruit-grid">
+        
+                            <!-- Slide 1 (Right Aligned) -->
+                            <div class="swiper-slide grape-card">
+                                <div class="carousel-card">
+                                    <h3 class="w-font-inter w-font-600 w-font-70px w-line-100 w-color-white w-text-end fruit-grid-card-h3">
+                                        01</h3>
+                                    <p class="w-font-600 w-font-17px w-line-140 w-color-white w-mb-9px">Concord Grape</p>
+                                    <div>
+                                        <img class="w-width-100" src="./assets/images/Concord Grape.png" alt="fruit image">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Slide 2 (Left Aligned) -->
+                            <div class="swiper-slide avocado-card">
+                                <div class="carousel-card">
+                                    <h3 class="w-font-inter w-font-600 w-font-70px w-line-100 w-color-white w-text-end fruit-grid-card-h3">
+                                        02</h3>
+                                    <p class="w-font-600 w-font-17px w-line-140 w-color-white w-mb-9px">Avocado</p>
+                                    <div>
+                                        <img class="w-width-100" src="./assets/images/Avocado.png" alt="fruit image">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 (right Aligned) -->
+                            <div class="swiper-slide  blackberry-card">
+                                <div class="carousel-card">
+                                    <h3 class="w-font-inter w-font-600 w-font-70px w-line-100 w-color-white w-text-end fruit-grid-card-h3">
+                                        03</h3>
+                                    <p class="w-font-600 w-font-17px w-line-140 w-color-white w-mb-9px">Blackberry</p>
+                                    <div>
+                                        <img class="w-width-100" src="./assets/images/Blackberry.jpg" alt="fruit image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -539,6 +637,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

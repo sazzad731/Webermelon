@@ -96,6 +96,9 @@
 .w-font-128px{
     font-size: clamp(42px, calc(11.58px + 8.09vw), 128px);
 }
+.w-font-70px{
+    font-size: 70px;
+}
 .w-font-64px{
     font-size: clamp(24px, calc(9.851px + 3.763vw), 64px);
 }
@@ -122,6 +125,9 @@
 }
 .w-font-16px{
     font-size: clamp(14px, calc(13.293px + 0.188vw), 16px);
+}
+.w-font-15px{
+    font-size: 15px;
 }
 .w-font-14px{
     font-size: 14px;
@@ -208,6 +214,9 @@
 .w-gap-32px{
     gap: 32px;
 }
+.w-gap-17px{
+    gap: 17.86px;
+}
 
 
 
@@ -283,6 +292,10 @@
     margin-bottom: 52px;
 }
 
+.w-mb-49px{
+    margin-bottom: 49px;
+}
+
 .w-mb-8px{
     margin-bottom: 8px;
 }
@@ -291,8 +304,8 @@
     margin-bottom: 4px;
 }
 
-.w-mb-49px{
-    margin-bottom: 49px;
+.w-mb-9px{
+    margin-bottom: 9px;
 }
 
 
@@ -386,7 +399,15 @@
 
 
 
+.w-cursor-pointer{
+    cursor: pointer;
+}
+
+
 
 .w-text-center{
     text-align: center;
+}
+.w-text-end{
+    text-align: end;
 }
