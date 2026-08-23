@@ -86,7 +86,9 @@
     padding: 16px 24px;
     border-radius: 16px;
     min-height: 178px;
+    width: 100%;
     max-width: 624px;
+    cursor: pointer;
 }
 
 
@@ -96,13 +98,52 @@
     border-radius: 16px;
 }
 
+.we-work-p{
+    max-width: 460px;
+}
+
+.every-design-p{
+    max-width: 465px;
+}
+
 
 .round-icon{
-    padding: 8px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.arrow-up-right-img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: top 0.2s ease-out, right 0.2s ease-out;
+}
+
+.design-card-fill-1-img-2,
+.design-card-fill-2-img-2,
+.design-card-outline-img-2{
+    top: 100%;
+    right: 100%;
+}
+
+.design-card-fill-1:hover .design-card-fill-1-img-1, 
+.design-card-fill-2:hover .design-card-fill-2-img-1,
+.design-card-outline:hover .design-card-outline-img-1{
+    top: -50%;
+    right: -50%;
+}
+.design-card-fill-1:hover .design-card-fill-1-img-2,
+.design-card-fill-2:hover .design-card-fill-2-img-2,
+.design-card-outline:hover .design-card-outline-img-2{
+    top: 50%;
+    right: 50%;
 }
 
 .design-card-outline{
@@ -637,7 +678,6 @@
     display: flex;
     align-items: flex-start;
     gap: 44px;
-
     width: 100%;
 }
 
@@ -702,10 +742,9 @@
 
 .template-card-wrapper {
     flex: 1 1 auto;
-
-    min-width: 0;
-
-    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 468px;
 }
 
 .template-card-group {
@@ -716,7 +755,6 @@
     width: 100%;
     min-width: 0;
     overflow-x: auto;
-    overflow-y: hidden;
     justify-content: flex-start;
     padding-bottom: 10px;
     scroll-behavior: smooth;

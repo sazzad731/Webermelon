@@ -56,11 +56,12 @@
             <div class="container">
                 <h2 class="w-font-400 w-font-48px w-line-140 w-color-white design-h2">We Use Design Tools That Deliver Excellence</h2>
                 <div class="w-flex w-gap-24px w-mb-24px design-flex-box-1">
-                        <div class="w-bg-white w-flex w-flex-col w-justify-between w-width-100 design-card-fill">
+                        <div class="w-bg-white w-flex w-flex-col w-justify-between w-width-100 design-card-fill design-card-fill-1">
                             <div class="w-flex w-justify-between w-gap-16px">
-                                <p class="w-font-400 w-font-24px w-line-140">We work with globally trusted design software and technologies.</p>
+                                <p class="w-font-400 w-font-24px w-line-140 we-work-p">We work with globally trusted design software and technologies.</p>
                                 <div class="w-bg-black round-icon">
-                                    <img src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
+                                    <img class="arrow-up-right-img design-card-fill-1-img-1" src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
+                                    <img class="arrow-up-right-img design-card-fill-1-img-2" src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
                                 </div>
                             </div>
                             <a class="w-font-400 w-font-20px w-line-140 w-self-align-end w-color-primary" href="#">More About</a>
@@ -76,18 +77,20 @@
                         <p class="w-font-400 w-font-24px w-line-140 w-color-white">Proven Design Systems & Assets
                             By Figma</p>
                         <div class="w-bg-white w-self-align-end round-icon">
-                            <img src="./assets/icons/arrow-up-right-green.svg" alt="arrow icon">
+                            <img class="arrow-up-right-img design-card-outline-img-1" src="./assets/icons/arrow-up-right-green.svg" alt="arrow icon">
+                            <img class="arrow-up-right-img design-card-outline-img-2" src="./assets/icons/arrow-up-right-green.svg" alt="arrow icon">
                         </div>
                     </a>
                     
                     <img class="design-card-img-2" src="./assets/images/Design-Tools-2.png" alt="image">
                     
-                    <div class="w-bg-white w-flex w-flex-col w-justify-between design-card-fill">
+                    <div class="w-bg-white w-flex w-flex-col w-justify-between design-card-fill design-card-fill-2">
                         <div class="w-flex w-justify-between">
-                            <p class="w-font-400 w-font-24px w-line-140">Every design goes through structured research, iteration, and
+                            <p class="w-font-400 w-font-24px w-line-140 every-design-p">Every design goes through structured research, iteration, and
                                 quality.</p>
                             <div class="w-bg-black round-icon">
-                                <img src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
+                                <img class="arrow-up-right-img design-card-fill-2-img-1" src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
+                                <img class="arrow-up-right-img design-card-fill-2-img-2" src="./assets/icons/arrow-up-right.svg" alt="arrow icon">
                             </div>
                         </div>
                         <a class="w-font-400 w-font-20px w-line-140 w-self-align-end w-color-primary" href="#">More About</a>
@@ -105,74 +108,76 @@
                 <h2 class="w-font-400 w-font-48px w-line-140 w-text-center w-color-white project-h2">Our favorite Project</h2>
             </div>
 
-            <!-- product list 1 -->
-            <div class="w-flex w-align-center w-justify-between project-list-item">
-                <div class="w-flex w-align-center w-gap-24px">
-                    <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">01/</span>
-                    <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Entrepreneurship</p>
-                </div>
-                <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
-                <div class="w-flex w-align-center w-gap-12px podcast-div">
-                    <p class="w-font-400 w-font-20px w-line-140 w-color-accent">126 Podcasts</p>
-                    <div class="podcasts-circle-div">
-                        <div class="podcasts-circle w-bg-primary"></div>
-                        <div class="podcasts-circle"></div>
-                        <div class="podcasts-circle"></div>
-                        <div class="podcasts-circle"></div>
+            <div class="project-list-div"> <!-- ToDo: fix image flickering on hover -->
+                <!-- product list 1 -->
+                <div class="w-flex w-align-center w-justify-between project-list-item">
+                    <div class="w-flex w-align-center w-gap-24px">
+                        <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">01/</span>
+                        <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Entrepreneurship</p>
+                    </div>
+                    <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
+                    <div class="w-flex w-align-center w-gap-12px podcast-div">
+                        <p class="w-font-400 w-font-20px w-line-140 w-color-accent">126 Podcasts</p>
+                        <div class="podcasts-circle-div">
+                            <div class="podcasts-circle w-bg-primary"></div>
+                            <div class="podcasts-circle"></div>
+                            <div class="podcasts-circle"></div>
+                            <div class="podcasts-circle"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- product list 2 -->
-            <div class="w-flex w-align-center w-justify-between project-list-item">
-                <div class="w-flex w-align-center w-gap-24px">
-                    <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">02/</span>
-                    <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Wellness</p>
-                </div>
-                <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
-                <div class="w-flex w-align-center w-gap-12px podcast-div">
-                    <p class="w-font-400 w-font-20px w-line-140 w-color-accent">24 Podcasts</p>
-                    <div class="podcasts-circle-div">
-                        <div class="podcasts-circle"></div>
-                        <div class="podcasts-circle  w-bg-primary"></div>
-                        <div class="podcasts-circle"></div>
-                        <div class="podcasts-circle"></div>
+                
+                <!-- product list 2 -->
+                <div class="w-flex w-align-center w-justify-between project-list-item">
+                    <div class="w-flex w-align-center w-gap-24px">
+                        <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">02/</span>
+                        <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Wellness</p>
+                    </div>
+                    <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
+                    <div class="w-flex w-align-center w-gap-12px podcast-div">
+                        <p class="w-font-400 w-font-20px w-line-140 w-color-accent">24 Podcasts</p>
+                        <div class="podcasts-circle-div">
+                            <div class="podcasts-circle"></div>
+                            <div class="podcasts-circle  w-bg-primary"></div>
+                            <div class="podcasts-circle"></div>
+                            <div class="podcasts-circle"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- product list 3 -->
-            <div class="w-flex w-align-center w-justify-between project-list-item">
-                <div class="w-flex w-align-center w-gap-24px">
-                    <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">03/</span>
-                    <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Food & Beverage</p>
-                </div>
-                <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
-                <div class="w-flex w-align-center w-gap-12px podcast-div">
-                    <p class="w-font-400 w-font-20px w-line-140 w-color-accent">65 Podcasts</p>
-                    <div class="podcasts-circle-div">
-                        <div class="podcasts-circle"></div>
-                        <div class="podcasts-circle"></div>
-                        <div class="podcasts-circle w-bg-primary"></div>
-                        <div class="podcasts-circle"></div>
+                
+                <!-- product list 3 -->
+                <div class="w-flex w-align-center w-justify-between project-list-item">
+                    <div class="w-flex w-align-center w-gap-24px">
+                        <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">03/</span>
+                        <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Food & Beverage</p>
+                    </div>
+                    <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
+                    <div class="w-flex w-align-center w-gap-12px podcast-div">
+                        <p class="w-font-400 w-font-20px w-line-140 w-color-accent">65 Podcasts</p>
+                        <div class="podcasts-circle-div">
+                            <div class="podcasts-circle"></div>
+                            <div class="podcasts-circle"></div>
+                            <div class="podcasts-circle w-bg-primary"></div>
+                            <div class="podcasts-circle"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- product list 4 -->
-            <div class="w-flex w-align-center w-justify-between project-list-item">
-                <div class="w-flex w-align-center w-gap-24px">
-                    <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">04/</span>
-                    <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Sustainability</p>
-                </div>
-                <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
-                <div class="w-flex w-align-center w-gap-12px podcast-div">
-                    <p class="w-font-400 w-font-20px w-line-140 w-color-accent">75 Podcasts</p>
-                    <div class="podcasts-circle-div">
-                        <div class="podcasts-circle"></div>
-                        <div class="podcasts-circle"></div>
-                        <div class="podcasts-circle"></div>
-                        <div class="podcasts-circle  w-bg-primary"></div>
+                
+                <!-- product list 4 -->
+                <div class="w-flex w-align-center w-justify-between project-list-item">
+                    <div class="w-flex w-align-center w-gap-24px">
+                        <span class="w-font-400 w-font-24px w-line-140 w-color-primary project-list-number">04/</span>
+                        <p class="w-color-accent w-font-400 w-font-64px w-line-140 product-list-p-1">Sustainability</p>
+                    </div>
+                    <img class="project-list-hover-img" src="./assets/images/project-hover-img.png" alt="img">
+                    <div class="w-flex w-align-center w-gap-12px podcast-div">
+                        <p class="w-font-400 w-font-20px w-line-140 w-color-accent">75 Podcasts</p>
+                        <div class="podcasts-circle-div">
+                            <div class="podcasts-circle"></div>
+                            <div class="podcasts-circle"></div>
+                            <div class="podcasts-circle"></div>
+                            <div class="podcasts-circle  w-bg-primary"></div>
+                        </div>
                     </div>
                 </div>
             </div>

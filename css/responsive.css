@@ -100,15 +100,16 @@
         flex-direction: column;
         position: absolute;
         border-radius: 20px;
-        padding: 20px 40px;
+        padding: 40px 40px;
         gap: 20px;
         top: -500px;
         right: 16px;
         transition: all .5s;
+        width: clamp(343px, calc(-33.729px + 100.194vw), 860px);
     }
 
     .nav-ul.active{
-        top: 40px;
+        top: 50px;
     }
 
 
@@ -139,7 +140,8 @@
     }
 
     .podcast-div{
-        margin-left: 98px;
+        flex-direction: row-reverse;
+        margin-left: clamp(45px, calc(34.07px + 2.907vw), 60px);
     }
 
     .logo-tags-links-grid{

@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   handleNavbar();
 
+
+
+  
+
   const handleImageFollower = () => {
     const projectListItems = document.querySelectorAll(".project-list-item");
 
