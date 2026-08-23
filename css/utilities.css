@@ -106,7 +106,7 @@
     font-size: clamp(28px, calc(20.926px + 1.881vw), 48px);
 }
 .w-font-42px{
-    font-size: 42px;
+    font-size: clamp(28px, calc(23.053px + 1.316vw), 42px);
 }
 .w-font-28px{
     font-size: clamp(16px, calc(11.755px + 1.129vw), 28px);
@@ -201,6 +201,9 @@
 }
 .w-gap-24px{
     gap: 24px;
+}
+.w-gap-64px{
+    gap: 64px;
 }
 .w-gap-48px{
     gap: 48px;

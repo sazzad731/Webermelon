@@ -58,8 +58,9 @@ const fruitData = [
 ];
 
 // Swiper Initialize
+const direction = window.screen.width <= 425 ? "horizontal" : "vertical";
 const swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
+  direction: direction,
   slidesPerView: 1,
   spaceBetween: 0,
   navigation: {
@@ -71,12 +72,11 @@ const swiper = new Swiper(".mySwiper", {
       const activeIndex = this.activeIndex;
       const data = fruitData[activeIndex];
 
-
       if (data) {
-        document.getElementById("projectSection").style.backgroundColor = data.color;
+        document.getElementById("projectSection").style.backgroundColor =
+          data.color;
         // document.getElementById("dynamicText").innerText = data.text;
       }
-
 
       const menuItems = document.querySelectorAll(".menu-item");
       menuItems.forEach((item, index) => {
