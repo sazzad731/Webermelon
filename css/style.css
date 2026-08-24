@@ -190,19 +190,22 @@
 }
 
 .project-list-hover-img {
-    display: none;
+    scale: 0;
     position: absolute;
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 10;
     rotate: 19.21deg;
-    transition: all .2s ease-out;
+    transition: scale .2s ease-out;
     width: clamp(120px, calc(55.946px + 17.036vw), 301.09px);
+    height: 181.28px;
+    object-fit: cover;
     border-radius: 20px;
+    user-select: none;
 }
 
 .project-list-item:hover .project-list-hover-img {
-    display: block;
+    scale: 1;
 }
 
 .podcasts-circle-div{
@@ -516,12 +519,18 @@
 }
 
 
+@property --progress {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+}
 .progress-circle {
     position: relative;
     width: 192.36px;
     height: 192.36px;
     border-radius: 50%;
-    background: conic-gradient(rgba(255, 255, 255, 0.4) 0% 12.5%, #ffffff 12.5% 100%);
+    background: conic-gradient(rgba(255, 255, 255, 0.4) 0% var(--progress, 0%), #ffffff var(--progress, 0%) 100%);
+    transition: --progress 0.5s linear;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -664,21 +673,18 @@
 /* templates section */
 .templates-section {
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto 140px auto;
-
-    padding-left: clamp(0px,
-            calc(-246.747px + 24.096vw),
-            100px);
-
-    box-sizing: border-box;
+    margin-bottom: 140px;
+    overflow: hidden;
 }
 
 .templates-content {
     display: flex;
     align-items: flex-start;
+    max-width: 1440px;
+    margin: 0 auto;
     gap: 44px;
     width: 100%;
+    padding-left: clamp(0px, calc(-246.747px + 24.096vw), 100px);
 }
 
 .template-card-2.custom-shape-content-2{
@@ -700,10 +706,8 @@
 
 .templates-span {
     display: inline-block;
-
     background-color: #ACEBDF;
     border-radius: 20px;
-
     padding: 0 10px;
 }
 
@@ -711,55 +715,36 @@
 .templates-tag-div {
     display: flex;
     align-items: center;
-
     gap: 16px;
-
     max-width: 515px;
-
     flex-wrap: wrap;
 }
 
 
 .templates-tag {
     margin: 0;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-
     padding: 12px 24px;
-
     border: 1px solid #000000;
     border-radius: 100px;
-
     height: 48px;
-
-    box-sizing: border-box;
-
     display: flex;
     align-items: center;
 }
 
-.template-card-wrapper {
-    flex: 1 1 auto;
-    width: 100%;
+.template-slide-container{
     position: relative;
+    width: 100%;
     height: 468px;
 }
 
-.template-card-group {
-    display: flex;
-    align-items: flex-start;
-    gap: 64px;
-    flex-wrap: nowrap;
-    width: 100%;
-    min-width: 0;
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding-bottom: 10px;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+.template-swiper{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
 }
 
 
@@ -769,10 +754,6 @@
 
 .template-card {
     flex: 0 0 296px;
-    width: 296px;
-    max-width: 296px;
-    min-width: 296px;
-    box-sizing: border-box;
 }
 
 .custom-shape {
@@ -813,7 +794,6 @@
 .custom-shape-content-2 {
     padding: 16px;
     border-radius: 5.17px;
-    box-sizing: border-box;
 }
 
 .custom-shape-content-1 {
@@ -849,7 +829,6 @@
     font-size: 16px;
     line-height: 150%;
     cursor: pointer;
-    box-sizing: border-box;
 }
 
 
@@ -866,7 +845,7 @@
 /* Completed Project section */
 .completed-project-section{
     background-color: #443747;
-    transition: background-color 0.6s ease-in-out;
+    transition: background-color 1.5s cubic-bezier(.98, 0, .04, 1);
 }
 
 .completed-project-container{
@@ -877,7 +856,7 @@
 }
 
 
-.completed-project-lef-content-div{
+.completed-project-left-content-div{
     padding: clamp(20px, calc(-3.981px + 6.378vw), 87.86px) 0;
 }
 
@@ -897,7 +876,8 @@
 .completed-project-circle-ul{
     position: absolute;
     right: 33.45px;
-    color: #FFFFFF
+    color: #FFFFFF;
+    width: 118px;
 }
 
 .completed-project-circle-2{
@@ -917,10 +897,12 @@
     bottom: clamp(-54.88px, calc(-21.2px + -2.341vw), -30px);
     border-radius: 50%;
     border: 10px solid transparent;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 40%) border-box;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 46%) border-box;
     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
+    rotate: var(--pseudo-deg, -8deg);
+    transition: rotate 1.5s cubic-bezier(.98, 0, .04, 1);
 }
 
 
@@ -939,14 +921,24 @@
 
 .completed-project-text{
     margin-left: 17.86px;
+    width: 100%;
+    width: clamp(340px, calc(318.07px + 5.833vw), 402px);
+}
+
+.completed-project-h2,
+.completed-project-h2-p {
+    transition: opacity 1.5s cubic-bezier(.98, 0, .04, 1);
+    opacity: 1;
 }
 
 .completed-project-h2-p{
     max-width: 326px;
+    height: 102px;
+    overflow-y: auto;
 }
 
 .carousel-container{
-    gap: 37.66px;
+    gap: clamp(10px, calc(-21.659px + 4.122vw), 37.66px);
 }
 
 .swiper {
@@ -969,6 +961,7 @@
 .fruit-grid{
     display: grid !important;
     grid-template-columns: repeat(2, auto);
+    transition-timing-function: cubic-bezier(.98, 0, .04, 1) !important;
 }
 
 .swiper-container::before{
@@ -1002,7 +995,7 @@
 }
 
 .menu-item {
-    transition: all 0.3s ease;
+    transition: all 1.5s cubic-bezier(.98, 0, .04, 1);
 }
 .menu-item.active-menu {
     font-size: 15px;

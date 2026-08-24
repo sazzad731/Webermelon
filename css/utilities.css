@@ -97,7 +97,7 @@
     font-size: clamp(42px, calc(11.58px + 8.09vw), 128px);
 }
 .w-font-70px{
-    font-size: 70px;
+    font-size: clamp(38px, calc(26.681px + 3.01vw), 70px);
 }
 .w-font-64px{
     font-size: clamp(24px, calc(9.851px + 3.763vw), 64px);
