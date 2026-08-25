@@ -345,4 +345,12 @@
     .footer-logo-break {
         display: none;
     }
+
+    .footer-social-icon-div{
+        width: 37px;
+        height: 37px;
+    }
+    .facebook-icon{
+        margin-top: -5px;
+    }
 }
