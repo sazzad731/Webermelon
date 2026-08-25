@@ -262,15 +262,7 @@
 
     .completed-project-container{
         flex-direction: column;
-    }
-    .swiper-container{
-        rotate: -90deg;
-    }
-    .grape-card, .avocado-card, .blackberry-card, .strawberry-card, .orange-card, .pomegranate-card{
-        rotate: 90deg;
-    }
-    .mySwiper{
-        overflow: hidden !important;
+        padding-right: 0px;
     }
     .carousel-container{
         gap: clamp(16px, calc(-4.776px + 5.526vw), 37.66px);
@@ -285,11 +277,62 @@
         width: 100%;
         rotate: -90deg;
     }
+    .swiper-container{
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 1px solid #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    .swiper-container::before{
+        left: 50%;
+        rotate: 90deg;
+    }
+    .swiper{
+        height: 440px !important;
+        width: 236px;
+        margin-right: 0px !important;
+    }
+    .fruit-grid{
+        grid-template-columns: repeat(6, auto);
+        column-gap: 64px;
+    }
     .carousel-card{
         max-width: 100%;
     }
+    .grape-card,
+    .avocado-card,
+    .blackberry-card,
+    .strawberry-card,
+    .orange-card,
+    .pomegranate-card{
+        width: 160px !important;
+    }
     .grape-card{
         align-self: flex-start;
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: -50px;
+    }
+    .avocado-card{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .blackberry-card{
+        grid-row: 1;
+        grid-column: 3;
+        overflow: hidden;
+    }
+    .strawberry-card{
+        grid-row: 2;
+        grid-column: 4;
+    }
+    .orange-card{
+        grid-column: 5;
+        grid-row: 1;
+    }
+    .pomegranate-card{
+        grid-column: 6;
+        grid-row: 2;
     }
 
     .footer-logo-break {

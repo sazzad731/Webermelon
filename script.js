@@ -173,7 +173,7 @@ const fruitData = [
 // Swiper Initialize
 const direction = window.screen.width <= 425 ? "horizontal" : "vertical";
 const swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
+  direction: direction,
   slidesPerView: 1,
   spaceBetween: 0,
   speed: 1500,
