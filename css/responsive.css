@@ -47,10 +47,6 @@
         flex-direction: column-reverse;
         gap: 20px;
     }
-
-    .swiper-container::before{
-        left: 52%;
-    }
 }
 
 
@@ -187,6 +183,10 @@
     .quick-links-div{
         justify-self: self-start;
     }
+
+    .swiper-container::before{
+        left: 54%;
+    }
 }
 
 
@@ -321,6 +321,7 @@
         grid-row: 1;
         grid-column: 3;
         overflow: hidden;
+        height: 219px !important;
     }
     .strawberry-card{
         grid-row: 2;
