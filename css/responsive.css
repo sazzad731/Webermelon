@@ -335,6 +335,13 @@
         grid-row: 2;
     }
 
+
+    .brand-experience-div-1{
+        clip-path: url(#responsive-clip-mobile);
+        -webkit-clip-path: url(#responsive-clip-mobile);
+    }
+
+
     .footer-logo-break {
         display: none;
     }

@@ -99,9 +99,14 @@ document.addEventListener("DOMContentLoaded", function () {
 // templates section
 const templateSwiper = new Swiper(".template-swiper", {
   direction: "horizontal",
-  slidesPerView: 1,
+  slidesPerView: 1.3,
   spaceBetween: 64,
-  freeMode: true,
+  loop: true,
+  // freeMode: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
   breakpoints: {
     768: {
@@ -109,14 +114,14 @@ const templateSwiper = new Swiper(".template-swiper", {
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 64,
     },
     1030: {
       slidesPerView: 2.5,
     },
     1920: {
-      slidesPerView: 2.5,
+      slidesPerView: 3,
     },
   },
 });

@@ -73,6 +73,8 @@
 
 .hero-img{
     height: 248px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 
@@ -586,6 +588,7 @@
     border-radius: 20px;
     width: 100%;
     max-width: 392px;
+    height: 396px;
 }
 
 .creative-card-img-div{
@@ -1067,10 +1070,12 @@
 }
 
 .contact-now-btn{
-    padding: 17px 16px 17px 65px;
+    width: 184px;
+    height: 48px;
+    padding-left: 50px;
     border-radius: 100px;
     position: relative;
-    transition: all .3s ease-out;
+    transition: all .5s ease-in-out;
 }
 
 .arrow-up-right-green{
@@ -1078,16 +1083,17 @@
 }
 
 .contact-now-btn-icon{
-    padding: 10px;
     background-color: var(--w-primary-color);
     border-radius: 50%;
     position: absolute;
     left: 8px;
-    transition: all .3s;
+    width: 32px;
+    height: 32px;
+    transition: all .5s ease-in-out;
 }
 
 .contact-now-btn:hover{
-    padding: 17px 65px 17px 16px;
+    padding-left: 8px;
     background-color: transparent;
     color: #FFFFFF;
 }
@@ -1110,6 +1116,9 @@
     background-color: transparent;
     border: 1px solid white;
     border-radius: 100px;
+    width: 188px;
+    height: 56px;
+    text-wrap: nowrap;
 }
 
 
@@ -1137,18 +1146,49 @@
 
 
 .book-meeting-btn{
-    padding: 8px 16px 8px 8px;
+    padding-left: 50px;
     display: flex;
     align-items: center;
     gap: 10px;
     border-radius: 100px;
+    width: 206px;
+    height: 48px;
+    position: relative;
+    transition: all .5s ease-in-out;
 }
 
-.book-meeting-btn-img{
-    padding: 10px;
+.book-meeting-btn-icon{
+    width: 32px;
+    height: 32px;
     background-color: var(--w-primary-color);
     border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    transition: all .5s ease-in-out;
 }
+
+.book-meeting-btn:hover{
+    padding-left: 12px;
+    background-color: var(--w-primary-color);
+    color: #FFFFFF;
+}
+
+.book-meeting-btn:hover .book-meeting-btn-icon{
+    left: 165px;
+    background-color: #FFFFFF;
+}
+
+.book-meeting-btn-arrow-green{
+    display: none;
+}
+
+.book-meeting-btn:hover .book-meeting-btn-arrow-green{
+    display: block;
+}
+.book-meeting-btn:hover .book-meeting-btn-arrow{
+    display: none;
+}
+
 
 
 .webermelon-bottom-div{
@@ -1157,14 +1197,19 @@
     width: 100%;
     max-width: 1240px;
     aspect-ratio: 1240 / 216;
-    clip-path: url(#responsive-clip-2);
-    -webkit-clip-path: url(#responsive-clip-2);
-
     display: flex;
     justify-content: space-between;
     margin-top: clamp(-25px, calc(3.428px + -1.976vw), -4px);
     gap: 32px;
     flex-wrap: wrap;
+    border-radius: 24px 24px 0 24px;
+    mask-image:
+            linear-gradient(black, black),
+            linear-gradient(black, black),
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 69.5 67'%3E%3Cpath d='M0,0 H69.5 C69.5,6.57 66.81,12.85 62.05,17.38 L41.44,37 L16.43,60.5 C11.98,64.67 6.1,67 0,67 V0 Z' fill='black'/%3E%3C/svg%3E");
+        mask-size: 100% calc(100% - 67px), calc(100% - 68px) 67px, 69.5px 67px;
+        mask-position: top left, bottom left, bottom right;
+        mask-repeat: no-repeat;
 }
 
 .usa-p{

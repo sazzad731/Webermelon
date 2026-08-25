@@ -390,7 +390,9 @@
 .w-justify-self-end{
     justify-self: end;
 }
-
+.w-flex-1{
+    flex: 1;
+}
 
 
 .w-position-relative{
